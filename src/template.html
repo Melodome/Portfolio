@@ -3,9 +3,490 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- ✏️ EDIT PAGE TITLE HERE -->
+    <title>Mau (MeloDev) | Friendly Neighborhood Developer ✨</title>
+    <!-- Playful rounded heading font (Fredoka) + clean readable body font (Nunito) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>hi</h1>
+
+    <!-- ================= TOP NAVIGATION ================= -->
+    <header class="site-header">
+        <nav class="nav-container" aria-label="Main Navigation">
+            <a href="#first-part" class="brand-logo">
+                <span class="wiggle-emoji" aria-hidden="true">👋</span> Mau <span class="badge-pill">MeloDev</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#proj-section">Projects 🎉</a></li>
+                <li><a href="#about-section">About &amp; Skills 🧠</a></li>
+                <li><a href="#contact-section" class="nav-cta">Say Hi 💬</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= HERO / INTRO SECTION (#first-part) ================= -->
+        <section id="first-part" class="hero-section">
+            <div class="wrapper hero-wrapper">
+                
+                <div class="per-desc">
+                    <!-- Speech bubble caption -->
+                    <div class="speech-bubble">
+                        <span>✨ Available for cool freelance quests!</span>
+                    </div>
+
+                    <!-- ✏️ EDIT HERO HEADING & TAGLINE HERE -->
+                    <h1 class="hero-title">
+                        Wassup! I'm <span class="highlight-text">Mau</span> <span class="wiggle-emoji" aria-hidden="true">🚀</span>
+                    </h1>
+                    <p class="hero-tagline">
+                        Also known on Discord as <strong>MeloDev</strong> — turning caffeine into clean code, clever bots, and fun games.
+                    </p>
+
+                    <!-- ✏️ EDIT BIO TEXT HERE (Kept from your original template) -->
+                    <p class="hero-bio">
+                        I am a <strong>2+ years Web Developer (almost three!)</strong> | <strong>Python Developer</strong> | <strong>Roblox Game Developer</strong>. It is my passion to build modular, clean, optimized, and easy-to-read code that actually behaves itself in production.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#proj-section" class="btn btn-primary">See What I Made 🎨</a>
+                        <a href="#contact-section" class="btn btn-secondary">Let's Work Together 🤝</a>
+                    </div>
+                </div>
+
+                <!-- 📸 REPLACE PERSONAL PHOTO OR AVATAR HERE -->
+                <div class="per-photo">
+                    <div class="photo-frame">
+                        <span class="doodle-star star-top" aria-hidden="true">✦</span>
+                        <img 
+                            src="./img/profile.jpg" 
+                            alt="Portrait of Mau (MeloDev)"
+                            onerror="this.src='https://placehold.co/600x600/FEF08A/1E293B?text=MeloDev+%F0%9F%98%8E'"
+                        >
+                        <div class="photo-caption">lvl 99 code wizard 🧙‍♂️</div>
+                        <span class="doodle-star star-bottom" aria-hidden="true">★</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS SECTION (#proj-section) ================= -->
+        <section id="proj-section" class="projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">~ NO BUGS WERE HARMED ~</span>
+                    <h2>Things I Made &amp; I'm Kinda Proud Of 🎉</h2>
+                    <p>Click any project card to inspect the full photo and read the full story!</p>
+                </div>
+
+                <!-- Interactive Filter Buttons (Powered by index.js) -->
+                <div class="filter-bar" role="tablist" aria-label="Filter projects by category">
+                    <button class="filter-btn active" data-filter="all" type="button">All Goodies ✨</button>
+                    <button class="filter-btn" data-filter="web-sec" type="button">🌐 Web Dev</button>
+                    <button class="filter-btn" data-filter="disc-sec" type="button">🤖 Discord Bots</button>
+                    <button class="filter-btn" data-filter="alg-sec" type="button">🧩 Algorithms</button>
+                    <button class="filter-btn" data-filter="net-sec" type="button">💻 .NET Apps</button>
+                    <button class="filter-btn" data-filter="roblox-sec" type="button">🎮 Roblox Games</button>
+                </div>
+
+                <!-- =================================================================
+                     📦 ALL PROJECT CARDS LIVE BELOW!
+                     Clicking any card opens the full-size photo & long description modal.
+                     ================================================================= -->
+                <div class="projects-grid" id="projects-grid">
+
+                    <!-- 1. WEBSITE DEVELOPMENT (.web-sec) -->
+                    <article class="project-card web-sec card-pastel-yellow" data-category="web-sec">
+                        <div class="card-image-wrap">
+                            <!-- 📸 REPLACE PHOTO HERE -->
+                            <img 
+                                src="./img/plv-registrar.png" 
+                                alt="Screenshot of responsive web application project"
+                            >
+                            <span class="card-zoom-hint" aria-hidden="true">🔍 Click to expand</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tags">
+                                <!-- ✏️ EDIT TAGS HERE -->
+                                <span class="tag">Web</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Webpack</span>
+                            </div>
+                            <!-- ✏️ EDIT TITLE HERE -->
+                            <h3 class="card-title">Web-Based PLV Registrar Document Request System [Sample System]</h3>
+                            <!-- ✏️ EDIT DESCRIPTION HERE (Full text shows when card is clicked!) -->
+                            <p class="card-desc">
+                                A responsive website built from scratch with modular code, fast load times, and buttery-smooth animations that look great on phones and desktops alike. It is mainly used to
+                                request documents to the local university online which solves the problem when there are a long line of students waiting for their turn inside the campus physically. The website
+                                also gave the admin the ability to track students, reducing the traffic caused by physical student lines. Add '/admin' to see the admin side ( Dont worry this is a sample copy).
+                            </p>
+                            <!-- ✏️ EDIT PROJECT LINK HERE -->
+                            <a href="https://plvregistrar.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                                View project <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card web-sec card-pastel-yellow" data-category="web-sec">
+                        <div class="card-image-wrap">
+                            <!-- 📸 REPLACE PHOTO HERE -->
+                            <img 
+                                src="./img/weather-app.png" 
+                                alt="Screenshot of responsive web application project"
+                            >
+                            <span class="card-zoom-hint" aria-hidden="true">🔍 Click to expand</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tags">
+                                <!-- ✏️ EDIT TAGS HERE -->
+                                <span class="tag">Web</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Webpack</span>
+                            </div>
+                            <!-- ✏️ EDIT TITLE HERE -->
+                            <h3 class="card-title">Web-Based Weather App</h3>
+                            <!-- ✏️ EDIT DESCRIPTION HERE -->
+                            <p class="card-desc">
+                                A personal web-based weather app application to track weathers. I developed this to practice my use of API and to understand
+                                even further the use of PROMISES and THEN in JavaScript and as well as its new alternative the ASYNC and AWAIT.
+                            </p>
+                            <!-- ✏️ EDIT PROJECT LINK HERE -->
+                            <button type="button" class="btn btn-card btn-disabled" disabled aria-disabled="true">
+                                Not Live 🔒
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- 2. DISCORD BOTS (.disc-sec) -->
+                    <article class="project-card disc-sec card-pastel-blue" data-category="disc-sec">
+                        <div class="card-image-wrap">
+                            <!-- 📸 REPLACE PHOTO HERE -->
+                            <img 
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3Px7n_F1z4wYz90vfoQkQLs9IC2FJL_opOwbhTZP8Q&s" 
+                                alt="Preview of custom Discord bot commands in action"
+                            >
+                            <span class="card-zoom-hint" aria-hidden="true">🔍 Click to expand</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tags">
+                                <!-- ✏️ EDIT TAGS HERE -->
+                                <span class="tag">Discord Bot</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Automation</span>
+                            </div>
+                            <!-- ✏️ EDIT TITLE HERE -->
+                            <h3 class="card-title">Robloxt Verification Discord Bot and Role Management</h3>
+                            <!-- ✏️ EDIT DESCRIPTION HERE -->
+                            <p class="card-desc">
+                                It is a Discord bot that is developed to verify the user when they enter the client's server.
+                                It automatically manages the user's roles and rights in the server the moment they verify through in-game verification. The admin
+                                also has the ability to manage the user's roles, rights, and status.
+                            </p>
+                            <!-- 🔒 DISABLED BUTTON (Cannot be clicked) -->
+                            <button type="button" class="btn btn-card btn-disabled" disabled aria-disabled="true">
+                                Not Live 🔒
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- 3. ALGORITHMS (.alg-sec) -->
+                    <article class="project-card alg-sec card-pastel-pink" data-category="alg-sec">
+                        <div class="card-image-wrap">
+                            <!-- 📸 REPLACE PHOTO HERE -->
+                            <img 
+                                src="https://uncodemy.com/blog/blog-img/single-linked-list-in-data-structure.webp" 
+                                alt="Linked List photo"
+                            >
+                            <span class="card-zoom-hint" aria-hidden="true">🔍 Click to expand</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tags">
+                                <!-- ✏️ EDIT TAGS HERE -->
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Optimization</span>
+                            </div>
+                            <!-- ✏️ EDIT TITLE HERE -->
+                            <h3 class="card-title">Linked-List from Scratch</h3>
+                            <!-- ✏️ EDIT DESCRIPTION HERE -->
+                            <p class="card-desc">
+                                I developed a Linked List algorithm from scratch using JavaScript with the use of Jest as my tool for unit testing.
+                                I developed it to build muscle memory to understand algorithms even further. It is developed modularly so I used classes and
+                                functions while applying the 'S' in S.O.L.I.D Principles which is Single Responsibility Principle.
+                            </p>
+                            <!-- ✏️ EDIT PROJECT LINK HERE -->
+                            <a href="https://github.com/melo-dev-ph/odin-linkedlist.git" target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                                View project <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card alg-sec card-pastel-pink" data-category="alg-sec">
+                        <div class="card-image-wrap">
+                            <!-- 📸 REPLACE PHOTO HERE -->
+                            <img 
+                                src="https://www.masaischool.com/blog/content/images/2023/07/HashMap-1.png" 
+                                alt="Hashmap"
+                            >
+                            <span class="card-zoom-hint" aria-hidden="true">🔍 Click to expand</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tags">
+                                <!-- ✏️ EDIT TAGS HERE -->
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Optimization</span>
+                            </div>
+                            <!-- ✏️ EDIT TITLE HERE -->
+                            <h3 class="card-title">Hashmap from Scratch</h3>
+                            <!-- ✏️ EDIT DESCRIPTION HERE -->
+                            <p class="card-desc">
+                                I developed a Hashmap algorithm from scratch using JavaScript with the use of Jest as my tool for unit testing.
+                                This project gave me more understanding of optimization and time and space complexity.
+                            </p>
+                            <!-- ✏️ EDIT PROJECT LINK HERE -->
+                            <a href="https://github.com/melo-dev-ph/hashmap.git" target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                                View project <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card alg-sec card-pastel-pink" data-category="alg-sec">
+                        <div class="card-image-wrap">
+                            <!-- 📸 REPLACE PHOTO HERE -->
+                            <img 
+                                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/1280px-Binary_search_tree.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" 
+                                alt="BST"
+                            >
+                            <span class="card-zoom-hint" aria-hidden="true">🔍 Click to expand</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tags">
+                                <!-- ✏️ EDIT TAGS HERE -->
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Optimization</span>
+                            </div>
+                            <!-- ✏️ EDIT TITLE HERE -->
+                            <h3 class="card-title">Binary Search Tree from Scratch</h3>
+                            <!-- ✏️ EDIT DESCRIPTION HERE -->
+                            <p class="card-desc">
+                                I developed a Binary Search Tree algorithm from scratch mainly to improve my optimization skills and to understand how such algorithm works.
+                            </p>
+                            <!-- ✏️ EDIT PROJECT LINK HERE -->
+                            <a href="https://github.com/Melodome/bst.git" target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                                View project <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 4. .NET APPS IN VISUAL STUDIO (.net-sec) -->
+                    <article class="project-card net-sec card-pastel-purple" data-category="net-sec">
+                        <div class="card-image-wrap">
+                            <!-- 📸 REPLACE PHOTO HERE -->
+                            <img 
+                                src="https://placehold.co/800x500/EDE9FE/1E293B?text=.QuizMaker" 
+                                alt="Interface of .NET desktop utility built in Visual Studio"
+                            >
+                            <span class="card-zoom-hint" aria-hidden="true">🔍 Click to expand</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tags">
+                                <!-- ✏️ EDIT TAGS HERE -->
+                                <span class="tag">.NET</span>
+                                <span class="tag">Visual Studio</span>
+                                <span class="tag">Desktop</span>
+                            </div>
+                            <!-- ✏️ EDIT TITLE HERE -->
+                            <h3 class="card-title">Tiered Level Quiz Maker</h3>
+                            <!-- ✏️ EDIT DESCRIPTION HERE -->
+                            <p class="card-desc">
+                                A .NET App that uses Gemini API and a multi-tiered verification to make quizzes from PPTX, PDF, and other files using RAG Technique (Retrieval-Augmented-Generation).
+                            </p>
+                            <!-- 🔒 DISABLED BUTTON (Cannot be clicked) -->
+                            <button type="button" class="btn btn-card btn-disabled" disabled aria-disabled="true">
+                                Not Live 🔒
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- 5. ROBLOX GAMES (.roblox-sec) -->
+                    <article class="project-card roblox-sec card-pastel-green" data-category="roblox-sec">
+                        <div class="card-image-wrap">
+                            <!-- 📸 REPLACE PHOTO HERE -->
+                            <img 
+                                src="./img/karidenrya.jpg" 
+                                alt="Karinderya Anomaly Photo"
+                            >
+                            <span class="card-zoom-hint" aria-hidden="true">🔍 Click to expand</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tags">
+                                <!-- ✏️ EDIT TAGS HERE -->
+                                <span class="tag">Roblox</span>
+                                <span class="tag">Luau</span>
+                                <span class="tag">Game Dev</span>
+                            </div>
+                            <!-- ✏️ EDIT TITLE HERE -->
+                            <h3 class="card-title">Karinderya Anomaly</h3>
+                            <!-- ✏️ EDIT DESCRIPTION HERE -->
+                            <p class="card-desc">
+                                It is an ongoing Personal Roblox Game that is inspired from other Roblox Anomaly games but instead it showcases Philippine Mythical Creatures.
+                                Currently developing it modularly to reduce code redundancy and make it easier to read, reuse, and recode.
+                            </p>
+                            <!-- 🔒 DISABLED BUTTON (Cannot be clicked) -->
+                            <button type="button" class="btn btn-card btn-disabled" disabled aria-disabled="true">
+                                Not Live 🔒
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="project-card roblox-sec card-pastel-green" data-category="roblox-sec">
+                        <div class="card-image-wrap">
+                            <!-- 📸 REPLACE PHOTO HERE -->
+                            <img 
+                                src="https://placehold.co/800x500/EDE9FE/1E293B?text=Robloxt+Verification+Game+Side" 
+                                alt="Robloxt"
+                            >
+                            <span class="card-zoom-hint" aria-hidden="true">🔍 Click to expand</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tags">
+                                <!-- ✏️ EDIT TAGS HERE -->
+                                <span class="tag">Roblox</span>
+                                <span class="tag">Luau</span>
+                                <span class="tag">Game Dev</span>
+                            </div>
+                            <!-- ✏️ EDIT TITLE HERE -->
+                            <h3 class="card-title">RObloxt Discord Bot Verification - Game Side</h3>
+                            <!-- ✏️ EDIT DESCRIPTION HERE -->
+                            <p class="card-desc">
+                                It is developed for the RObloxt Discord bot that I created for my client; this allows users to join in the game
+                                to be verified by the bot.
+                            </p>
+                            <!-- 🔒 DISABLED BUTTON (Cannot be clicked) -->
+                            <button type="button" class="btn btn-card btn-disabled" disabled aria-disabled="true">
+                                Not Live 🔒
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ME, LANGUAGES & CERTIFICATIONS ================= -->
+        <section id="about-section" class="about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">~ BEHIND THE KEYBOARD ~</span>
+                    <h2>A Little Bit About Me 🧠</h2>
+                    <p>Why I love building things and the toolkit I bring to your project.</p>
+                </div>
+
+                <!-- ✏️ EDIT ABOUT ME STORY HERE -->
+                <div class="about-card">
+                    <p>
+                        Hey there! Whether I'm wiring up a front-end bundle with Webpack, scripting a multiplayer mechanic in Roblox Studio, or automating a community server with Python, my rule is always the same: <strong>write code that the next human (including future me) will actually enjoy reading.</strong> I care deeply about clear communication, hitting deadlines, and making the whole process stress-free for my clients.
+                    </p>
+                </div>
+
+                <div class="skills-cert-grid">
+                    <!-- Preserved .lang-sec from your template -->
+                    <div class="lang-sec info-box card-pastel-yellow">
+                        <h3>🛠️ Programming Languages &amp; Tools</h3>
+                        <!-- ✏️ EDIT LANGUAGES/SKILLS HERE -->
+                        <ul class="pill-list">
+                            <li>HTML5 &amp; CSS3</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Webpack &amp; npm</li>
+                            <li>Jest</li>
+                            <li>React</li>
+                            <li>Supabase</li>
+                            <li>PHP</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>Flask</li>
+                            <li>Roblox Luau</li>
+                            <li>Roblox Rojo</li>
+                            <li>Unity</li>
+                            <li>C# / .NET</li>
+                            <li>Git &amp; GitHub</li>
+                        </ul>
+                    </div>
+
+                    <!-- Preserved .cert-sec from your template -->
+                    <div class="cert-sec info-box card-pastel-blue">
+                        <h3>🏆 Certifications &amp; Milestones</h3>
+                        <!-- ✏️ EDIT CERTIFICATIONS HERE -->
+                        <ul class="cert-list">
+                            <li>
+                                <strong>National Certification II : Computer System Servicing</strong>
+                            </li>
+                            <li>
+                                <strong>Odin Project JavaScript Course</strong>
+                            </li>
+                            <li>
+                                <strong>100 Days of Python Bootcamp by Angela Yu</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section id="contact-section" class="contact-section">
+            <div class="section-container">
+                <div class="contact-card">
+                    <span class="wiggle-emoji contact-emoji" aria-hidden="true">📬</span>
+                    <h2>Got a Cool Idea? Let's Build It!</h2>
+                    <p>
+                        Whether you need a sleek website, a custom Discord bot, or scripts for your next Roblox hit, my inbox is open and friendly.
+                    </p>
+
+                    <!-- ✏️ EDIT CONTACT LINKS HERE -->
+                    <div class="contact-buttons">
+                        <button type="button" id="copy-discord-btn" class="btn btn-primary" data-discord="jhncrlmauricio.dev">
+                            💬 Discord: <strong>jhncrlmauricio.dev</strong>
+                        </button>
+                        <a href="https://github.com/melo-dev-ph" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            🐙 GitHub
+                        </a>
+                    </div>
+                    <p id="copy-feedback" class="copy-feedback" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= PROJECT SHOWCASE MODAL OVERLAY ================= -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-card" id="modal-card">
+            <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close project details">
+                ✕ Close
+            </button>
+            <div class="modal-image-wrap">
+                <img id="modal-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Project preview">
+            </div>
+            <div class="modal-body">
+                <div class="card-tags" id="modal-tags"></div>
+                <h3 class="modal-title" id="modal-title"></h3>
+                <p class="modal-desc" id="modal-desc"></p>
+                <div class="modal-footer" id="modal-action"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>Built by <strong>Mau (MeloDev)</strong>.</p>
+    </footer>
+
 </body>
 </html>
